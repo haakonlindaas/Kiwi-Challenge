@@ -4,6 +4,8 @@
 
 /* Fase 2: posisjonsknapp */
 .map-container{position:relative;min-width:0}
+/* Mobil: kartbeholderen, ikke det indre kartet, er flex-elementet. */
+@media(max-width:750px){.map-container{order:-1;width:100%}.map-container #map{height:55vh;min-height:350px}}
 .map-container #map{width:100%}
 .locate-button{position:absolute;z-index:5;right:12px;top:12px;background:#fff;color:#075c35;border:1px solid #cbd9ce;border-radius:10px;padding:11px 14px;font:600 14px system-ui,-apple-system,Segoe UI,sans-serif;box-shadow:0 2px 9px #0002;cursor:pointer}
 .locate-button:disabled{opacity:.65;cursor:wait}
